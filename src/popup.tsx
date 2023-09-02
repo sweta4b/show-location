@@ -1,5 +1,5 @@
 import React from "react"
-import { ShowLocationButton } from "~features/showlocation-button"
+import { ShowLocationButton } from "~features/showLocationButton"
 
 import "~style.css"
 

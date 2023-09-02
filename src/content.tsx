@@ -2,7 +2,7 @@ import cssText from "data-text:~style.css"
 import type { PlasmoCSConfig } from "plasmo"
 import React from "react"
 
-import { ShowLocationButton } from "~features/showlocation-button"
+import { ShowLocationButton } from "~features/showLocationButton"
 
 export const config: PlasmoCSConfig = {
   matches: ["https://www.plasmo.com/*"]

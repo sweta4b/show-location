@@ -20,9 +20,7 @@ export const ShowLocationButton: React.FC = () => {
       setIsLoading(true);
       setLocation("Please wait..")
       const ip = await getUserIP();
-
       const response = await axios.get(`https://ipinfo.io/${ip}/json?token=${process.env.PLASMO_PUBLIC_ACCESS_TOKEN}`);
-      console.log(response.data); // Log the response data
       const { country = 'N/A', city = 'N/A' } = response.data;
       setLocation(`Your country is ${country}\n Your city is ${city}`);
       setIsLoading(false);
